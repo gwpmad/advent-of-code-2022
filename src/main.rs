@@ -1,4 +1,5 @@
-mod days;
+pub mod days;
+mod helpers;
 use std::env;
 
 fn main() {
