@@ -21,5 +21,7 @@ pub fn solution() {
         .collect();
 
     sums.sort_by(|a, b| b.cmp(a));
-    println!("Solution: {:?}", sums[0])
+
+    println!("Part 1: {:?}", sums[0]);
+    println!("Part 2: {:?}", sums[0] + sums[1] + sums[2]);
 }
