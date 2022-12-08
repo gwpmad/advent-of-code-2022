@@ -1,7 +1,7 @@
 use crate::helpers::reader::read_file;
 
 pub fn solution() {
-    let string = read_file("./src/days/inputs/1".to_owned());
+    let string = read_file("1");
     let string_without_last_char = &string[0..&string.len() - 1];
     let calories_vec: Vec<Vec<i32>> = string_without_last_char
         .split("\n\n")
