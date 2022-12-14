@@ -64,8 +64,6 @@ fn get_part_2_score(
         let required_move = required_move_lookup
             .get(&moves)
             .expect("Required move should be a char");
-        // println!("{}", moves.1);
-        // println!("{}", required_move);
         let round_score = outcome_lookup
             .get(&(moves.0, required_move.clone()))
             .expect("Round score should be an i32");
