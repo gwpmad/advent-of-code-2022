@@ -16,6 +16,7 @@ fn call_day(day: u8) {
     match day {
         1 => days::day1::solution(),
         2 => days::day2::solution(),
+        3 => days::day3::solution(),
         _ => unimplemented!(),
     }
 }
