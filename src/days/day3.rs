@@ -71,3 +71,11 @@ fn get_part_2_common_char(group: &[&str]) -> char {
 // Lower case = 97-122
 // Lowercase item types a through z have priorities 1 through 26.
 // therefore: utf-8 value of char minus 96
+
+// Note:
+// I learned from the Reddit thread that you can cast a char to an integer - they used usize
+// but it works with other types like i32 and u8. Example code:
+// match c.is_ascii_lowercase() {
+//   true => c - 'a' as usize + 1,
+//   false => c - 'A' as usize + 27,
+// }
