@@ -18,6 +18,7 @@ fn call_day(day: u8) {
         2 => days::day2::solution(),
         3 => days::day3::solution(),
         4 => days::day4::solution(),
+        5 => days::day5::solution(),
         _ => unimplemented!(),
     }
 }

@@ -5,7 +5,7 @@ pub fn read_file(day_number: &str) -> String {
     path.push_str(day_number);
     let file_string_result = fs::read_to_string(path);
     let file_string = match file_string_result {
-        Ok(string) => string,
+        Ok(string) => string.trim_end().to_owned(),
         Err(error) => panic!("Couldn't open the file - {error}"),
     };
     return file_string;
